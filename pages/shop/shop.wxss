@@ -1,0 +1,14 @@
+.banner-image{
+  width: 100%;
+}
+
+.goods-column{
+  align-items: center;
+  width: 350rpx;
+  border: 1px solid #d5d5d5;
+}
+
+.goods-column image{
+  width: 350rpx;
+  display: block;
+}

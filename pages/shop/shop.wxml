@@ -1,0 +1,22 @@
+<view class='container'>
+  <view class='banner'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay='{{autoPlay}}'
+    interval='{{interval}}' duration='{{duration}}'>
+      <block wx:for="{{imageUrls}}">
+        <swiper-item>
+          <image class='banner-image' src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='goods-content'>
+    <text>商品展示</text>
+    <hr/>
+    <view class='goods-column'>
+      <image src='/assests/image/goods1.jpg'></image>
+      <text>干红</text> 
+      <text>|</text> 
+      <text>1人购买</text>
+    </view>
+  </view>
+</view>

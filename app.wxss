@@ -1,0 +1,23 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 0;
+  box-sizing: border-box;
+  background: #F0F0F2;
+  position: absolute;
+}
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.f12{
+  font-size: 12px;
+}
+

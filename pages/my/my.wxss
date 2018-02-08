@@ -1,0 +1,36 @@
+/* pages/my/my.wxss */
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.column-group {
+  margin-bottom: 30rpx;
+}
+
+.column {
+  width: 100%;
+  padding: 15rpx;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  background: #fff;
+  align-items: center;
+  display: flex; /*Flex布局*/
+  display: -webkit-flex; /* Safari */
+}
+
+.column text:first-child {
+  float: left;
+  width: 67%;
+}
+
+.column text:last-child {
+  text-align: right;
+}
+
+text {
+  font-family: "Microsoft YaHei", 微软雅黑;
+}
