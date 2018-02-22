@@ -1,1 +1,41 @@
 /* pages/find/find.wxss */
+.brief-info{
+  width: 100%;
+  margin: 0 0 10rpx 0;
+  background: #cdcdcd;
+  align-items: center;
+  padding: 15rpx;
+}
+.brief-info image{
+  display: inline;
+}
+.icon-group{
+  margin: 10rpx 0;
+  background: #cdcdcd;
+}
+.icon-column{
+  display: inline-block;
+  margin: 68rpx;
+  align-items: center;
+  text-align: center;
+}
+.icon{
+  display: block;
+}
+.icon-title{
+  font-size: 10px;
+}
+.store-info{
+  margin: 10rpx 0;
+  background: #cdcdcd;
+}
+.store-column{
+  line-height: 30rpx;
+  margin: 10rpx 30rpx;
+}
+.store-column image{
+  line-height: 30rpx;
+}
+.store-text{
+  line-height: 30rpx;
+}

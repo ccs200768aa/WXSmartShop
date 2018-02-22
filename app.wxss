@@ -16,8 +16,28 @@
   margin: 20rpx;
   border-radius: 50%;
 }
+.display{
+  width: 100%;
+}
 
 .f12{
   font-size: 12px;
+}
+.f14{
+  font-size: 14px;
+}
+.f30rpx{
+  font-size: 30rpx;
+}
+.icon{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 10rpx;
+}
+.icon-small{
+  width: 30rpx;
+  height: 30rpx;
 }
 
