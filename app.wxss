@@ -19,6 +19,9 @@
 .display{
   width: 100%;
 }
+text{
+  font-family: "Microsoft YaHei",Arial;
+}
 
 .f12{
   font-size: 12px;

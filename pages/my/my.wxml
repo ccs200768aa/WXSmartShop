@@ -12,11 +12,12 @@
     </view>
     <view class='column'>
       <text>{{my_sex}}</text>
-      <text>{{userInfo.gender}}</text>
+      <text wx:if='{{userInfo.gender}}==1'>男</text>
+      <text wx:else>女</text>
     </view>
     <view class='column'>
       <text>{{my_shippingAddress}}</text>
-      <text>{{gt}}</text>
+      <text class='icon-next'></text>
     </view>
   </view>
   <view class='column-group'>

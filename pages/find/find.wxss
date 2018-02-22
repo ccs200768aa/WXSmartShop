@@ -7,7 +7,7 @@
   padding: 15rpx;
 }
 .brief-info image{
-  display: inline;
+  display: inline-block;
 }
 .icon-group{
   margin: 10rpx 0;
