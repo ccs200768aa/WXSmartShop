@@ -1,4 +1,5 @@
 /**app.wxss**/
+
 .container {
   height: 100%;
   width: 100%;
@@ -7,40 +8,46 @@
   /* justify-content: space-between; */
   padding: 0;
   box-sizing: border-box;
-  background: #F0F0F2;
+  background: #f0f0f2;
   position: absolute;
 }
+
 .avatar {
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
 }
-.display{
+
+.display {
   width: 100%;
 }
-text{
-  font-family: "Microsoft YaHei",Arial;
+
+text {
+  font-family: 'Microsoft Yahei','微软雅黑','宋体';
 }
 
-.f12{
+.f12 {
   font-size: 12px;
 }
-.f14{
+
+.f14 {
   font-size: 14px;
 }
-.f30rpx{
+
+.f30rpx {
   font-size: 30rpx;
 }
-.icon{
+
+.icon {
   width: 90rpx;
   height: 90rpx;
   border-radius: 50%;
-  background: #ffffff;
+  background: #87c651;
   padding: 10rpx;
 }
-.icon-small{
+
+.icon-small {
   width: 30rpx;
   height: 30rpx;
 }
-

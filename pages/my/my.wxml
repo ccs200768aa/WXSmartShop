@@ -12,24 +12,24 @@
     </view>
     <view class='column'>
       <text>{{my_sex}}</text>
-      <text wx:if='{{userInfo.gender}}==1'>男</text>
-      <text wx:else>女</text>
+      <text wx:if='{{userInfo.gender}}==1'>{{sex_man}}</text>
+      <text wx:else>{{sex_woman}}</text>
     </view>
-    <view class='column'>
-      <text>{{my_shippingAddress}}</text>
+    <view  bindtap="addressBindTap" id='address' class='column'>
+      <text >{{my_shippingAddress}}</text>
       <text class='icon-next'></text>
     </view>
   </view>
   <view class='column-group'>
     <view class='column'>
       <text class=''>{{my_contact}}</text>
-      <text>{{gt}}</text>
+      <text class='icon-next'></text>
     </view>
   </view>
   <view class='column-group'>
     <view class='column'>
       <text>{{my_help}}</text>
-      <text>{{gt}}</text>
+      <text class='icon-next'></text>
     </view>
   </view>
 </view>

@@ -1,0 +1,13 @@
+<view class='container'>
+  <view class='address-list'>
+    <view class='address-column'>
+      <image src='/assests/image/icon_click.svg'></image>
+      <view class='address-text-group'>
+        <text>莫晓刀,13855555555</text>
+        <text>收货地址：收拾收拾撒大大</text>
+      </view>
+      <image src='/assests/image/icon_edit_default.svg' bindtap='editClickTap'></image>
+    </view>
+  </view>
+  <view class='add-btn'>{{addAddressText}}</view>
+</view>

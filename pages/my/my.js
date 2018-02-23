@@ -10,14 +10,19 @@ Page({
     "my_avater": "头像",
     "my_nickName":"昵称",
     "my_sex":"性别",
+    'sex_man':'男',
+    'sex_woman':'女',
     "my_shippingAddress":"我的收货地址",
     "my_contact":"联系客服",
     "my_help":"帮助中心",
-    "lt":"<",
-    "gt":">",
     "userInfo": {}
   },
-
+  // 收货地址绑定函数
+  addressBindTap:function(){
+    wx.navigateTo({
+      url: '../my/address'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -96,6 +101,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    
   }
 })

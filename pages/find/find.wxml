@@ -3,7 +3,7 @@
     <image class='avatar' src='/assests/image/logo.jpg'></image>
     <text>{{storeName}}</text>
   </view>
-  <view class='icon-group'>
+  <view class='group-info'>
     <view class='icon-column'>
       <image class='icon' src='/assests/image/icon_share_default.svg'></image>
       <text class='icon-title'>{{shareText}}</text>
@@ -17,13 +17,13 @@
       <text class='icon-title'>{{telText}}</text>
     </view>
   </view>
-  <view class='store-info'>
+  <view class='group-info'>
     <view class='store-column'>
       <image class='icon-small' src='/assests/image/icon_location.svg'></image>
       <text class='f30rpx store-text'>{{addressText}}</text>
     </view>
     <view class='store-column'>
-      <image class='icon-small' src='/assests/image/icon_tel_click.svg'></image>
+      <image class='icon-small' src='/assests/image/icon_tel.svg'></image>
       <text class='f30rpx store-text'>{{telNoText}}</text>
     </view>
   </view>
@@ -33,17 +33,16 @@
         <image class='display' src='{{item}}'></image>
       </view>
     </block>
-    <text>兰雕是安第斯山脉的守护者，兰雕庄园就坐落在安第斯山脉脚下，将两个智利最重要的元素融合进兰雕庄园的酒标中，是对这片风土最大的礼赞和诠释。兰雕是安第斯山脉的守护者，兰雕庄园就坐落在安第斯山脉脚下，将两个智利最重要的元素融合进兰雕庄园的酒标中，是对这片风土最大的礼赞和诠释。</text>
-    <text>
-兰雕庄园拥有无数的佳酿屡获奖项，当中不乏金奖及最高荣誉卡佩斯奖（法国地区金奖之金奖），为家族在葡萄酒界带来崇高的声誉。丹尼·都沃（1948年生，都沃酒业集团总裁）在1981年执掌了家族业务，他是著名的波尔多酿酒师学院的毕业生。
-</text>
+    <block wx:for='{{displayTextList}}'>
+      <text wx:if='{{index<2}}' class='display-text'>{{item}}</text>
+    </block>
     <block>
       <view wx:for='{{imageChateauList}}'>
         <image class='display' src='{{item}}'></image>
       </view>
     </block>
-    <text>他的儿子葛雷也是酿酒师，2006年时承继了兰雕庄园。
-兰雕庄园葡萄酒出口到全球超过20个国家，包括俄罗斯，韩国，日本，越南，法国，英国，中国等国家。目前，兰雕庄园还在扩张着这一出口版图，将新世界的佳酿带到世界各地。
-</text>
+    <block wx:for='{{displayTextList}}'>
+      <text wx:if='{{index>=2}}' class='display-text'>{{item}}</text>
+    </block>
   </view>
 </view>
