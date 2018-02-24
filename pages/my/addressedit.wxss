@@ -1,0 +1,41 @@
+.info-group {
+  width: 100%;
+  background: white;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 0 20rpx;
+}
+
+.info-column {
+  border-bottom: 1px solid #d3d3d3;
+  position: relative;
+  height: 90rpx;
+  line-height: 70rpx;
+}
+
+.info-column text:first-child {
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+}
+
+.info-column input {
+  display: inline;
+  position: absolute;
+  left: 220rpx;
+  top: 10rpx;
+  line-height: 70rpx;
+}
+
+/* .info-group .info-column:last-child {
+  border-bottom: 0;
+} */
+
+.btn-group {
+  margin-top: 30rpx;
+  padding: 0 20rpx;
+}
+
+.btn {
+  margin-bottom: 20rpx;
+}

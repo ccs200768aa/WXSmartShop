@@ -21,7 +21,22 @@ Page({
       'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519281219343&di=3b099007bc19a341301c17763f51ae6e&imgtype=0&src=http%3A%2F%2Fpic31.photophoto.cn%2F20140516%2F0033034359072842_b.jpg',
       'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519281245580&di=54b04c822fe430a987e6dd5ce6fff720&imgtype=0&src=http%3A%2F%2Fwww.nlswine.com%2Fezcatfiles%2Fred054%2Fimg%2Fimg%2F8683%2FDuero4.jpg'],
   },
-
+  // 地图导航按钮点击事件
+  mapBindTap: function () {
+    wx.openLocation({
+      latitude: app.globalData.userLatitude,
+      longitude: app.globalData.userLongitude,
+      name: '前海优粮尚品',
+      success: function (res) {
+        console.info('success')
+      }
+    })
+  },
+  telUs: function () {
+    wx.makePhoneCall({
+      phoneNumber: '18126129145',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -80,6 +95,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: '前海优粮尚品',
+      desc: '专业红酒销售!',
+      path: '/pages/shop/shop'
+    }
   }
 })

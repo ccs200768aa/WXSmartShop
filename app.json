@@ -1,11 +1,13 @@
 {
   "pages": [
+    "pages/my/addressedit",
+    "pages/find/find",
     "pages/shop/shop",
     "pages/my/address",
     "pages/my/my",
-    "pages/find/find",
     "pages/index/index",
     "pages/logs/logs"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

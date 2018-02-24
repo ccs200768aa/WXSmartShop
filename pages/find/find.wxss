@@ -11,7 +11,6 @@
 }
 .group-info{
   margin: 10rpx 0;
-  background: #cdcdcd;
   background: white;
 }
 .icon-column{
@@ -23,6 +22,10 @@
 .icon{
   display: block;
   /* border: 1px solid #4d181e; */
+}
+.icon-btn{
+  padding: 0;
+  border-radius: 50%;
 }
 .icon-title{
   font-size: 10px;

@@ -32,9 +32,20 @@ App({
         }
       }
     })
+    //获取用户地址信息
+    wx.getLocation({
+      type: 'wgs84',
+      success: res => {
+        this.globalData.userLatitude = res.latitude
+        this.globalData.userLongitude = res.longitude
+        console.info(this.globalData.userLatitude)
+      },
+    })
   },
   globalData: {
     userInfo: null,
     storeName: '前海优粮尚品',
+    userLatitude: null,
+    userLongitude: null,
   }
 })

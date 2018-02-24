@@ -5,15 +5,21 @@
   </view>
   <view class='group-info'>
     <view class='icon-column'>
-      <image class='icon' src='/assests/image/icon_share_default.svg'></image>
+      <button class='icon-btn' open-type='share'>
+        <image class='icon' src='/assests/image/icon_share_default.svg'></image>
+      </button>
       <text class='icon-title'>{{shareText}}</text>
     </view>
-    <view class='icon-column'>
-      <image class='icon' src='/assests/image/icon_map_default.svg'></image>
+    <view class='icon-column' >
+      <button class='icon-btn' bindtap='mapBindTap'>
+        <image class='icon' src='/assests/image/icon_map_default.svg'></image>
+      </button>
       <text class='icon-title'>{{mapText}}</text>
     </view>
     <view class='icon-column'>
-      <image class='icon' src='/assests/image/icon_tel_default.svg'></image>
+      <button class='icon-btn' bindtap='telUs'>
+        <image class='icon' src='/assests/image/icon_tel_default.svg'></image>
+      </button>
       <text class='icon-title'>{{telText}}</text>
     </view>
   </view>

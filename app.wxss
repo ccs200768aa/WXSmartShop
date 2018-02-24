@@ -51,3 +51,12 @@ text {
   width: 30rpx;
   height: 30rpx;
 }
+
+.btn-save{
+  background: #2baf2b;
+  color: white;
+}
+.btn-del{
+  background: #f24343;
+  color: white;
+}

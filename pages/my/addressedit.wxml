@@ -1,0 +1,28 @@
+<view class='container'>
+  <view class='info-group'>
+    <view class='info-column'>
+      <text>收货人</text>
+      <input placeholder='请输入收货人'>莫晓刀</input>
+    </view>
+    <view class='info-column'>
+      <text>联系电话</text>
+      <text>18122228888</text>
+    </view>
+    <view class='info-column'>
+      <text>收货地区</text>
+      <text>111</text>
+    </view>
+    <view class='info-column'>
+      <text>详细地址</text>
+      <text>外太空</text>
+    </view>
+    <view class='info-column'>
+      <text>邮政编码</text>
+      <text placeholder='（选填）'></text>
+    </view>
+  </view>
+  <view class='btn-group'>
+    <button class='btn-save btn'>保存</button>
+    <button class='btn-del btn'>删除</button>
+  </view>
+</view>
