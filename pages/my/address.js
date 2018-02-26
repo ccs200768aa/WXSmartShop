@@ -7,15 +7,27 @@ Page({
   data: {
     addAddressText:'新增收货地址',
   },
-  editClickTap:function(id){
-    console.info('a')
+  //
+  editBtnTap:function(id){
+    wx.navigateTo({
+      url: '/pages/my/addressedit',
+    })
   },
-
+  /**
+   * 新增按钮点击事件
+   */
+  addBtnTap:function(){
+    wx.navigateTo({
+      url: '/pages/my/addressedit',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.setNavigationBarTitle({
+      title: '我的收货地址',
+    })
   },
 
   /**

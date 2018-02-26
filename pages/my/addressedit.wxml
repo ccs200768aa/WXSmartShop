@@ -6,19 +6,19 @@
     </view>
     <view class='info-column'>
       <text>联系电话</text>
-      <text>18122228888</text>
+      <input placeholder='请输入联系电话'>18122228888</input>
     </view>
-    <view class='info-column'>
+    <!-- <view class='info-column'>
       <text>收货地区</text>
-      <text>111</text>
-    </view>
+      <input placeholder='请输入收货人'>111</input>
+    </view> -->
     <view class='info-column'>
-      <text>详细地址</text>
-      <text>外太空</text>
+      <text>收货地址</text>
+      <input placeholder='请输入收货地址'/>
     </view>
     <view class='info-column'>
       <text>邮政编码</text>
-      <text placeholder='（选填）'></text>
+      <input placeholder='请输入邮政编码'></input>
     </view>
   </view>
   <view class='btn-group'>

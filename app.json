@@ -1,23 +1,24 @@
 {
   "pages": [
-    "pages/my/addressedit",
-    "pages/find/find",
     "pages/shop/shop",
-    "pages/my/address",
+    "pages/shop/goods",
+    "pages/find/find",
     "pages/my/my",
+    "pages/my/address",
+    "pages/my/addressedit",
     "pages/index/index",
     "pages/logs/logs"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#4d181e",
     "navigationBarTitleText": "前海优粮尚品",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#000000",
     "backgroundColor": "#FFFFFF",
+    "selectedColor": "#4d181e",
     "list": [
       {
         "pagePath": "pages/shop/shop",

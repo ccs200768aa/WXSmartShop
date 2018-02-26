@@ -5,9 +5,15 @@
   background: white;
   align-items: center;
   padding: 15rpx;
+  background: #4d181e;
+  color: white;
 }
 .brief-info image{
-  display: inline-block;
+  float: left;
+}
+.brief-info text{
+  line-height: 163rpx;
+  margin-left: 20rpx;
 }
 .group-info{
   margin: 10rpx 0;

@@ -12,6 +12,11 @@
   position: absolute;
 }
 
+.banner-image {
+  width: 100%;
+  height: 100%;
+}
+
 .avatar {
   width: 128rpx;
   height: 128rpx;
@@ -24,7 +29,18 @@
 }
 
 text {
-  font-family: 'Microsoft Yahei','微软雅黑','宋体';
+  font-family: 'Microsoft Yahei', '微软雅黑', '宋体';
+}
+
+.nowrap-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.h1 {
+  display: block;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .f12 {
@@ -52,11 +68,12 @@ text {
   height: 30rpx;
 }
 
-.btn-save{
+.btn-save {
   background: #2baf2b;
   color: white;
 }
-.btn-del{
+
+.btn-del {
   background: #f24343;
   color: white;
 }

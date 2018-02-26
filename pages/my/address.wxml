@@ -6,8 +6,8 @@
         <text>莫晓刀,13855555555</text>
         <text>收货地址：收拾收拾撒大大</text>
       </view>
-      <image src='/assests/image/icon_edit_default.svg' bindtap='editClickTap'></image>
+      <image src='/assests/image/icon_edit_default.svg' bindtap='editBtnTap'></image>
     </view>
   </view>
-  <view class='add-btn'>{{addAddressText}}</view>
+  <view class='add-btn' bindtap='addBtnTap'>{{addAddressText}}</view>
 </view>

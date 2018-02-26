@@ -1,0 +1,23 @@
+<view class='container'>
+  <swiper indicator-dots='true' autoplay='true'>
+    <block wx:for='{{imgArr}}' wx:key='img'>
+      <swiper-item width='100%' height='300rpx'>
+        <image class='banner-image' src='{{goodsImagePre}}{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='goods-brief'>
+    <text class='h1 nowrap-text'>{{goodsinfo.goodsname}}</text>
+    <text style='color:red'>{{rmb}}{{goodsinfo.sellprice/100}}</text>
+  </view>
+  <view class='goods-desc'>
+    <text class='h1'></text>
+    <text style='color:red'>{{goodsinfo.discription}}</text>
+    <block wx:for='{{imgArr}}' wx:key='desc'>
+      <image src='{{goodsImagePre}}{{item}}'></image>
+    </block>
+  </view>
+  <view class='buy-now'>
+    <text>立即购买</text>
+  </view>
+</view>
