@@ -18,17 +18,20 @@
     </swiper>
   </view>
 
-  <view class='goods-content'>
+  <view>
     <text class='h1'>商品展示</text>
-    <block wx:for='{{goodsList}}' wx:key='goods'>
-      <view class='goods-column' bindtap='goodsBindTap' data-id='{{item.goodsid}}'>
-        <image src='{{goodsImagePre}}{{item.goodsface}}'></image>
-        <view class='goods-column-info'>
-          <text class='goods-title'>{{item.goodsname}}</text>
-          <text class='goods-price'>{{rmb}}{{item.sellprice/100}}</text>
-          <image src='/assests/image/icon_cart.svg'></image>
+
+    <view class='goods-content'>
+      <block wx:for='{{goodsList}}' wx:key='goods'>
+        <view class='goods-column' bindtap='goodsBindTap' data-id='{{item.goodsid}}'>
+          <image src='{{goodsImagePre}}{{item.goodsface}}'></image>
+          <view class='goods-column-info'>
+            <text class='goods-title'>{{item.goodsname}}</text>
+            <text class='goods-price'>{{rmb}}{{item.sellprice/100}}</text>
+            <image src='/assests/image/icon_cart.svg'></image>
+          </view>
         </view>
-      </view>
-    </block>
+      </block>
+    </view>
   </view>
 </view>

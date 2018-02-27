@@ -46,7 +46,7 @@ App({
     storeName: '前海优粮尚品',
     userLatitude: null,
     userLongitude: null,
-    diancallUrl: 'http://c.diancall.com/pipes/',
+    diancallUrl: 'https://c.diancall.com/pipes/',
     rmb: '￥',
   }
 })

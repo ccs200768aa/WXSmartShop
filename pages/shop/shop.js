@@ -46,7 +46,7 @@ Page({
       wx.request({
         url: app.globalData.diancallUrl + 'custgoods/query',
         data: {
-          bean: { 'status': [10], 'storeid': 25001809 },
+          bean: { 'status': [10], 'storeid': 25001776 },
         },
         success: res => {
           this.setData({

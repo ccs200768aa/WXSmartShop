@@ -7,15 +7,28 @@ Page({
   data: {
     goodsid: 0,
     goodsinfo: null,
+    buyNowChecked: false,
   },
-
+  /**
+   * 立即购买
+   */
+  buyNowBindTap: function () {
+    this.setData({
+      buyNowChecked: true,
+    })
+  },
+  propRadioBindCheck: function (e) {
+    this.setData({
+      radioValue: e.detail.value,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.setData({
-      goodsid:options.id,
-      rmb:app.globalData.rmb,
+      goodsid: options.id,
+      rmb: app.globalData.rmb,
     })
     this.setData({ goodsImagePre: "http://c.diancall.com/pipes/img/goods_900/", })
     wx.request({

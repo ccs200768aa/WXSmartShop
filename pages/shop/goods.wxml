@@ -10,14 +10,67 @@
     <text class='h1 nowrap-text'>{{goodsinfo.goodsname}}</text>
     <text style='color:red'>{{rmb}}{{goodsinfo.sellprice/100}}</text>
   </view>
-  <view class='goods-desc'>
-    <text class='h1'></text>
-    <text style='color:red'>{{goodsinfo.discription}}</text>
-    <block wx:for='{{imgArr}}' wx:key='desc'>
-      <image src='{{goodsImagePre}}{{item}}'></image>
-    </block>
+  <view>
+    <text class='h1'>商品详情</text>
+    <view class='goods-desc'>
+
+      <text style='color:red'>{{goodsinfo.discription}}</text>
+      <block wx:for='{{imgArr}}' wx:key='desc'>
+        <image src='{{goodsImagePre}}{{item}}'></image>
+      </block>
+    </view>
   </view>
-  <view class='buy-now'>
+  <view class='bottom-btn buy-now' bindtap='buyNowBindTap'>
     <text>立即购买</text>
+  </view>
+  <view class='{{buyNowChecked?"covered":"cover"}}'>
+  </view>
+  <view class='{{buyNowChecked?"goods-pv-checked":"goods-pv"}}'>
+    <view></view>
+    <view>
+      <text>规格:</text>
+      <block wx:for='{{goodsinfo.propValues}}' wx:key='prop' wx:for-index='idx'>
+        <text>{{idx}}</text>
+        <block wx:for='{{item}}' wx:key='val'>
+          <view class='prop-value'>
+            <radio-group bindchange='propRadioBindCheck'>
+              <label class='{{radioValue==item.propid?"prop-radio-check":"prop-radio"}}'>
+                <radio class='prop-radio' value='{{item.propid}}' hidden='true'></radio>
+                {{item.valuename}}asASDASDASDAS
+              </label>
+              <label class='{{radioChecked?"prop-radio-check":"prop-radio"}}'>
+                <radio class='prop-radio' value='{{item.propid}}' hidden='true'></radio>
+                {{item.valuename}}
+              </label>
+              <label class='{{radioChecked?"prop-radio-check":"prop-radio"}}'>
+                <radio class='prop-radio' value='{{item.propid}}' hidden='true'></radio>
+                {{item.valuename}}
+              </label>
+              <label class='{{radioChecked?"prop-radio-check":"prop-radio"}}'>
+                <radio class='prop-radio' value='{{item.propid}}' hidden='true'></radio>
+                {{item.valuename}}
+              </label>
+              <label class='{{radioChecked?"prop-radio-check":"prop-radio"}}'>
+                <radio class='prop-radio' value='{{item.propid}}' hidden='true'></radio>
+                {{item.valuename}}
+              </label>
+              <label class='{{radioChecked?"prop-radio-check":"prop-radio"}}'>
+                <radio class='prop-radio' value='{{item.propid}}' hidden='true'></radio>
+                {{item.valuename}}
+              </label>
+              <label class='{{radioChecked?"prop-radio-check":"prop-radio"}}'>
+                <radio class='prop-radio' value='{{item.propid}}' hidden='true'></radio>
+                {{item.valuename}}
+              </label>
+            </radio-group>
+          </view>
+        </block>
+      </block>
+    </view>
+    <view>
+      <text>购买数量</text>
+      <input type='number' />
+    </view>
+    <text class='bottom-btn'>下一步</text>
   </view>
 </view>
