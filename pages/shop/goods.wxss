@@ -21,6 +21,7 @@
 }
 
 .cover {
+  display: none;
   z-index: 10;
   position: fixed;
   left: 0;
@@ -69,6 +70,20 @@
   bottom: 740rpx;
 }
 
+.pv-select {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pv-select text {
+  display: inline-flex;
+  line-height: 74rpx;
+  width: 20%;
+  height: 74rpx;
+  font-size: 28rpx;
+}
+
 .bottom-btn {
   display: block;
   position: fixed;
@@ -80,6 +95,7 @@
   background: #4d181e;
   color: white;
   text-align: center;
+  border-radius: 0;
 }
 
 .prop-value {
@@ -87,10 +103,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  width: 70%;
+  line-height: 70rpx;
 }
 
 radio-group {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -98,13 +116,13 @@ radio-group {
 
 label {
   display: block;
-  width: 100rpx;
+  min-width: 100rpx;
   height: 50rpx;
+  padding: 0 10rpx;
   line-height: 50rpx;
   text-align: center;
-  margin: 20rpx 20rpx 0 0;
+  margin: 10rpx 20rpx 10rpx 0;
   font-size: 12px;
-  overflow: hidden;
 }
 
 .prop-radio {
@@ -113,6 +131,17 @@ label {
 }
 
 .prop-radio-check {
-  border: 4rpx solid #4d181e;
+  border: 2rpx solid #4d181e;
   color: #4d181e;
+}
+
+.buy-number {
+}
+
+.number {
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  border: 2rpx solid #4d181e;
+  overflow: hidden;
 }
